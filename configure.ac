@@ -707,6 +707,9 @@ case "${target}" in
   *-*-vxworks*)
     noconfigdirs="$noconfigdirs ${libgcj}"
     ;;
+  *-*-xv6*)
+    noconfigdirs="$noconfigdirs ${libgcj}"
+    ;;
   alpha*-*-*vms*)
     noconfigdirs="$noconfigdirs ${libgcj}"
     ;;
@@ -940,6 +943,8 @@ case "${target}" in
     noconfigdirs="$noconfigdirs target-rda"
     ;;
   *-*-vxworks*)
+    ;;
+  *-*-xv6*)
     ;;
   alpha*-dec-osf*)
     # ld works, but does not support shared libraries.

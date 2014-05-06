@@ -385,6 +385,10 @@ case "${host}" in
 	sys_dir=tirtos
 	have_crt0="no"
 	;;
+  *-*-xv6*)
+	sys_dir=xv6
+	newlib_cflags="${newlib_cflags} -D_I386MACH_ALLOW_HW_INTERRUPTS"
+	;;
   a29k-*-*)
 	sys_dir=a29khif
 	signal_dir=
