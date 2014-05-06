@@ -1,5 +1,4 @@
 # Newlib for xv6
----
 
 ## configure
 You should use 32bit compiler. 
@@ -26,4 +25,4 @@ Solutions
 1. Static link the binary (use `ld -b binary` switch) to kernel, and modified exec().
 2. Modify the file system. (i-node, block size...)
 
-I was execute mruby/mruby binary successful by solution 1.
+I was execute [mruby](https://github.com/mruby/mruby) binary successful by solution 1.
